@@ -1,0 +1,357 @@
+/* CSS Document */
+/* Theme Color */
+/* End Theme Color */
+/* Full Control */
+body {
+  background: #F2F2F2;
+  color: #262626; }
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+p {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 16px; }
+
+#about, #services, #contact, #gallery, #prep, #faq, #policies, #terms {
+  margin-top: 160px; }
+
+#about h1, #services h1, #contact h1, #gallery h1, #prep h1, #faq h1, #terms h1, #policies h1 {
+  text-align: center;
+  font-family: "viktor-script", sans-serif;
+  padding-bottom: 40px;
+  letter-spacing: 3px; }
+
+#home h3, #prep h3, #faq h3, #terms h3, #policies h3 {
+  font-family: "viktor-script", sans-serif;
+  margin-bottom: 0; }
+
+#prep p, #faq p, #terms p, #policies p {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.flex {
+  display: flex; }
+  .flex div:first-child {
+    margin-right: 10px; }
+  .flex div:last-child {
+    margin-left: 10px; }
+
+/* End Full Control */
+/* The Top Navigation */
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  transition: .3s; }
+  nav #logo {
+    padding: 5px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s; }
+    nav #logo img {
+      width: 150px; }
+  nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    nav ul li {
+      list-style: none; }
+      nav ul li a {
+        line-height: 80px;
+        letter-spacing: 3px;
+        color: #262626;
+        padding: 12px 10px;
+        text-decoration: none;
+        font-family: "viktor-script", sans-serif;
+        font-size: 20px;
+        letter-spacing: 5px;
+        transition: .3s; }
+      nav ul li a:focus {
+        outline: none; }
+      nav ul li a:hover {
+        color: #FA7688; }
+
+.mobile {
+  text-align: right;
+  font-size: 26px;
+  line-height: 70px;
+  display: none; }
+
+#toggle {
+  display: none; }
+
+/* End The Top Navigation */
+/* Scroll Up */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #FA7688;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: "viktor-script", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-decoration: none; }
+
+/* End  Scroll Up */
+header {
+  text-align: center; }
+  header img {
+    width: 100%; }
+
+.qoute {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px; }
+  .qoute h3 {
+    font-size: 30px;
+    font-family: "viktor-script", sans-serif; }
+  .qoute h4 {
+    font-style: italic; }
+
+.w3-content {
+  padding: 20px;
+  box-shadow: 3px 3px 3px 5px #262626;
+  background-image: url(../img/background.jpg);
+  width: 490px; }
+  .w3-content img {
+    border: 3px solid black; }
+
+/* Services */
+.brows {
+  margin: 0 auto;
+  width: 500px;
+  background-image: url(../img/background.jpg);
+  padding: 30px;
+  box-shadow: 3px 3px 3px 5px #262626; }
+
+table {
+  width: 100%;
+  background: #F2F2F2;
+  padding: 20px;
+  height: 100%;
+  border: 3px solid black; }
+
+th {
+  font-family: "viktor-script", sans-serif;
+  font-size: 25px;
+  text-align: left;
+  padding-top: 20px; }
+
+td {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 16px; }
+  td span {
+    display: block;
+    font-style: italic;
+    font-size: 12px; }
+
+.price {
+  padding-bottom: 20px;
+  text-align: right; }
+
+/* End Services */
+/* Gallery */
+#gallery img {
+  width: 100%; }
+
+/* Contact */
+#testimonials {
+  margin-bottom: 30px;
+  padding: 0;
+  overflow: hidden; }
+  #testimonials h3 {
+    font-family: "viktor-script", sans-serif;
+    letter-spacing: 3px;
+    padding-right: 15px; }
+
+.testi-one {
+  float: left;
+  width: 45%; }
+  .testi-one h3 {
+    font-size: 30px; }
+
+.testi-two {
+  float: right;
+  width: 45%;
+  text-align: right;
+  margin-right: 0px; }
+
+form {
+  float: left;
+  width: 50%;
+  margin: 5px; }
+  form textarea {
+    width: 80%;
+    height: 200px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px; }
+
+.contact {
+  margin: 20px; }
+
+.name, .email {
+  margin-left: 25px; }
+  .name input, .email input {
+    width: 40%;
+    height: 30px;
+    margin: 0 0 30px 0;
+    padding: 10px;
+    border-radius: 3px; }
+
+.subject {
+  margin-left: 10px; }
+  .subject input {
+    width: 79%;
+    height: 30px;
+    margin: 0 0 30px 0;
+    padding: 10px;
+    border-radius: 3px; }
+
+.message label {
+  float: left;
+  margin-top: 5px; }
+.message textarea {
+  width: 78%; }
+
+input[type=submit] {
+  background: #FA7688;
+  margin: 10px 10px 10px 75%;
+  padding: 5px 20px;
+  color: #F2F2F2;
+  font-family: "viktor-script", sans-serif;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 #262626; }
+
+input[type=submit]:active {
+  box-shadow: none; }
+
+.map {
+  float: right;
+  margin-bottom: 80px;
+  width: 40%; }
+  .map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0; }
+
+/* End Contact */
+footer {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 3px 3px 3px 5px #262626;
+  background: url(../img/background.jpg); }
+  footer p {
+    margin: 0; }
+  footer img {
+    margin-left: 10px;
+    margin-right: 5px; }
+  footer a {
+    text-decoration: none; }
+
+.copyright {
+  float: left; }
+
+.designed {
+  float: right; }
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+    text-align: center;
+    width: 100%; }
+    nav ul a {
+      display: block;
+      border-bottom: 1px solid #FCC1C7; }
+
+  .mobile {
+    display: block;
+    cursor: pointer; }
+
+  #toggle:checked + ul {
+    display: block; }
+
+  form, .map {
+    width: 100%; } }
+@media only screen and (max-width: 630px) {
+  .brows {
+    width: 100%; }
+
+  .gift {
+    width: 60%; }
+
+  .w3-content {
+    width: 100%; }
+
+  .testi-one {
+    padding: 0px 40px 0 0; }
+
+  input[type=submit] {
+    font-size: 20px;
+    margin-left: 50%; }
+
+  .name input, .email input {
+    width: 80%; }
+  .name #lname, .email #lname {
+    margin-left: 55px; }
+
+  footer {
+    display: block; }
+
+  .copyright {
+    float: none;
+    text-align: center;
+    padding-bottom: 20px; }
+
+  .designed {
+    float: none;
+    text-align: center; } }
+@media only screen and (max-width: 510px) {
+  .name, .email, .subject, .message {
+    width: 100%;
+    margin-left: 0px; }
+    .name input, .email input, .subject input, .message input {
+      width: 100%;
+      padding: 10px; }
+    .name #lname, .email #lname, .subject #lname, .message #lname {
+      margin-left: 0; }
+    .name label, .email label, .subject label, .message label {
+      float: none; }
+    .name textarea, .email textarea, .subject textarea, .message textarea {
+      width: 100%;
+      margin-left: 0; }
+
+  input[type=submit] {
+    margin-left: 35%; }
+
+  .testi-one, .testi-two {
+    padding: 0px 10px 0 0; }
+    .testi-one h3, .testi-two h3 {
+      font-size: 25px; }
+    .testi-one p, .testi-two p {
+      font-size: 12px; }
+
+  .brows {
+    padding: 10px; }
+
+  .flex {
+    flex-flow: wrap; } }
