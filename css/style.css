@@ -1,9 +1,10 @@
 /* CSS Document */
 /* Theme Color */
 /* End Theme Color */
+/* Box-Shadow Varible */
 /* Full Control */
 body {
-  background: #F2F2F2;
+  background: #f2f2f2;
   color: #262626; }
 
 #wrapper {
@@ -11,23 +12,44 @@ body {
   margin: 0 auto; }
 
 p {
-  font-family: 'Amaranth', sans-serif;
+  font-family: "Amaranth", sans-serif;
   font-size: 16px; }
 
-#about, #services, #contact, #gallery, #prep, #faq, #policies, #terms {
+#about,
+#services,
+#contact,
+#gallery,
+#prep,
+#faq,
+#policies,
+#terms {
   margin-top: 160px; }
 
-#about h1, #services h1, #contact h1, #gallery h1, #prep h1, #faq h1, #terms h1, #policies h1 {
+#about h1,
+#services h1,
+#contact h1,
+#gallery h1,
+#prep h1,
+#faq h1,
+#terms h1,
+#policies h1 {
   text-align: center;
   font-family: "viktor-script", sans-serif;
   padding-bottom: 40px;
   letter-spacing: 3px; }
 
-#home h3, #prep h3, #faq h3, #terms h3, #policies h3 {
+#home h3,
+#prep h3,
+#faq h3,
+#terms h3,
+#policies h3 {
   font-family: "viktor-script", sans-serif;
   margin-bottom: 0; }
 
-#prep p, #faq p, #terms p, #policies p {
+#prep p,
+#faq p,
+#terms p,
+#policies p {
   margin-top: 0;
   margin-bottom: 30px; }
 
@@ -47,13 +69,13 @@ nav {
   height: 100px;
   padding: 10px 0;
   box-sizing: border-box;
-  transition: .3s; }
+  transition: 0.3s; }
   nav #logo {
     padding: 5px 20px;
     height: 80px;
     float: left;
     font-size: 24px;
-    transition: .3s; }
+    transition: 0.3s; }
     nav #logo img {
       width: 150px; }
   nav ul {
@@ -73,11 +95,11 @@ nav {
         font-family: "viktor-script", sans-serif;
         font-size: 20px;
         letter-spacing: 5px;
-        transition: .3s; }
+        transition: 0.3s; }
       nav ul li a:focus {
         outline: none; }
       nav ul li a:hover {
-        color: #FA7688; }
+        color: #fa7688; }
 
 .mobile {
   text-align: right;
@@ -99,7 +121,7 @@ nav {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #FA7688;
+  background-color: #fa7688;
   color: white;
   cursor: pointer;
   padding: 5px;
@@ -127,7 +149,7 @@ header {
 
 .w3-content {
   padding: 20px;
-  box-shadow: 3px 3px 3px 5px #262626;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), -1px -1px 3px rgba(255, 255, 255, 0.9);
   background-image: url(../img/background.jpg);
   width: 490px; }
   .w3-content img {
@@ -139,11 +161,11 @@ header {
   width: 500px;
   background-image: url(../img/background.jpg);
   padding: 30px;
-  box-shadow: 3px 3px 3px 5px #262626; }
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), -1px -1px 3px rgba(255, 255, 255, 0.9); }
 
 table {
   width: 100%;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 20px;
   height: 100%;
   border: 3px solid black; }
@@ -151,20 +173,24 @@ table {
 th {
   font-family: "viktor-script", sans-serif;
   font-size: 25px;
+  font-weight: 100;
   text-align: left;
   padding-top: 20px; }
 
 td {
-  font-family: 'Amaranth', sans-serif;
-  font-size: 16px; }
+  font-family: "Amaranth", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0; }
   td span {
     display: block;
     font-style: italic;
-    font-size: 12px; }
+    font-size: 12px;
+    font-weight: lighter; }
 
 .price {
-  padding-bottom: 20px;
-  text-align: right; }
+  text-align: right;
+  vertical-align: top; }
 
 /* End Services */
 /* Gallery */
@@ -207,11 +233,13 @@ form {
 .contact {
   margin: 20px; }
 
-.name, .email {
+.name,
+.email {
   margin-left: 25px; }
-  .name input, .email input {
+  .name input,
+  .email input {
     width: 40%;
-    height: 30px;
+    height: 40px;
     margin: 0 0 30px 0;
     padding: 10px;
     border-radius: 3px; }
@@ -220,7 +248,7 @@ form {
   margin-left: 10px; }
   .subject input {
     width: 79%;
-    height: 30px;
+    height: 40px;
     margin: 0 0 30px 0;
     padding: 10px;
     border-radius: 3px; }
@@ -231,17 +259,17 @@ form {
 .message textarea {
   width: 78%; }
 
-input[type=submit] {
-  background: #FA7688;
+input[type="submit"] {
+  background: #fa7688;
   margin: 10px 10px 10px 75%;
   padding: 5px 20px;
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "viktor-script", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
-  box-shadow: 3px 3px 0 #262626; }
+  box-shadow: 3px 3px 3px #262626; }
 
-input[type=submit]:active {
+input[type="submit"]:active {
   box-shadow: none; }
 
 .map {
@@ -251,7 +279,8 @@ input[type=submit]:active {
   .map iframe {
     width: 100%;
     height: 450px;
-    border: 0; }
+    border: 1px solid pink;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), -1px -1px 3px rgba(255, 255, 255, 0.9); }
 
 /* End Contact */
 footer {
@@ -274,23 +303,24 @@ footer {
 .designed {
   float: right; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1124px) {
   nav ul {
     display: none;
     text-align: center;
     width: 100%; }
     nav ul a {
       display: block;
-      border-bottom: 1px solid #FCC1C7; }
+      border-bottom: 1px solid #fcc1c7; }
 
   .mobile {
     display: block;
     cursor: pointer; }
 
   #toggle:checked + ul {
-    display: block; }
-
-  form, .map {
+    display: block; } }
+@media only screen and (max-width: 900px) {
+  form,
+  .map {
     width: 100%; } }
 @media only screen and (max-width: 630px) {
   .brows {
@@ -305,13 +335,14 @@ footer {
   .testi-one {
     padding: 0px 40px 0 0; }
 
-  input[type=submit] {
-    font-size: 20px;
-    margin-left: 50%; }
+  input[type="submit"] {
+    font-size: 20px; }
 
-  .name input, .email input {
+  .name input,
+  .email input {
     width: 80%; }
-  .name #lname, .email #lname {
+  .name #lname,
+  .email #lname {
     margin-left: 55px; }
 
   footer {
@@ -326,28 +357,43 @@ footer {
     float: none;
     text-align: center; } }
 @media only screen and (max-width: 510px) {
-  .name, .email, .subject, .message {
+  .name,
+  .email,
+  .subject,
+  .message {
     width: 100%;
     margin-left: 0px; }
-    .name input, .email input, .subject input, .message input {
+    .name input,
+    .email input,
+    .subject input,
+    .message input {
       width: 100%;
       padding: 10px; }
-    .name #lname, .email #lname, .subject #lname, .message #lname {
+    .name #lname,
+    .email #lname,
+    .subject #lname,
+    .message #lname {
       margin-left: 0; }
-    .name label, .email label, .subject label, .message label {
+    .name label,
+    .email label,
+    .subject label,
+    .message label {
       float: none; }
-    .name textarea, .email textarea, .subject textarea, .message textarea {
+    .name textarea,
+    .email textarea,
+    .subject textarea,
+    .message textarea {
       width: 100%;
       margin-left: 0; }
 
-  input[type=submit] {
-    margin-left: 35%; }
-
-  .testi-one, .testi-two {
+  .testi-one,
+  .testi-two {
     padding: 0px 10px 0 0; }
-    .testi-one h3, .testi-two h3 {
+    .testi-one h3,
+    .testi-two h3 {
       font-size: 25px; }
-    .testi-one p, .testi-two p {
+    .testi-one p,
+    .testi-two p {
       font-size: 12px; }
 
   .brows {
@@ -355,3 +401,5 @@ footer {
 
   .flex {
     flex-flow: wrap; } }
+
+/*# sourceMappingURL=style.css.map */
