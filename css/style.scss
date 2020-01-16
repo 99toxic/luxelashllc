@@ -86,7 +86,6 @@ nav {
   padding: 10px 0;
   transition: 0.3s;
   #logo {
-    padding: 5px 20px;
     height: 80px;
     float: left;
     font-size: 24px;
@@ -383,7 +382,7 @@ footer {
 
 @media only screen and (max-width: 630px) {
   nav #logo {
-    padding-top: 20px;
+    padding-top: 10px;
 
     img {
       width: 100px;
