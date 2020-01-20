@@ -225,12 +225,6 @@ form {
   float: left;
   width: 50%;
   margin: 5px; }
-  form textarea {
-    width: 80%;
-    height: 200px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    border-radius: 3px; }
 
 .contact {
   margin: 20px; }
@@ -245,6 +239,19 @@ form {
     margin: 0 0 30px 0;
     padding: 10px;
     border-radius: 3px; }
+    .name input:focus,
+    .email input:focus {
+      background-color: #fff;
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border: 1px solid pink;
+      border-bottom: 3px solid green; }
+    .name input:focus:invalid,
+    .email input:focus:invalid {
+      border-bottom: 3px solid red; }
+    .name input::-webkit-input-placeholder,
+    .email input::-webkit-input-placeholder {
+      color: grey; }
 
 .subject {
   margin-left: 10px; }
@@ -254,12 +261,36 @@ form {
     margin: 0 0 30px 0;
     padding: 10px;
     border-radius: 3px; }
+    .subject input:focus {
+      background-color: #fff;
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border: 1px solid pink;
+      border-bottom: 3px solid green; }
+    .subject input:focus:invalid {
+      border-bottom: 3px solid red; }
+    .subject input::-webkit-input-placeholder {
+      color: grey; }
 
 .message label {
   float: left;
   margin-top: 5px; }
 .message textarea {
+  height: 200px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 3px;
   width: 78%; }
+  .message textarea:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 1px solid pink;
+    border-bottom: 3px solid green; }
+  .message textarea:focus:invalid {
+    border-bottom: 3px solid red; }
+  .message textarea::-webkit-input-placeholder {
+    color: grey; }
 
 input[type="submit"] {
   background: #fa7688;
@@ -271,8 +302,9 @@ input[type="submit"] {
   border-radius: 10px;
   box-shadow: 3px 3px 3px #262626; }
 
-input[type="submit"]:active {
-  box-shadow: none; }
+input[type="submit"]:active, input[type="submit"]:focus {
+  box-shadow: none;
+  outline: none; }
 
 .map {
   float: right;
